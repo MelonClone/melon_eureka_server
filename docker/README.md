@@ -11,6 +11,8 @@ docker run -it --ip [ip] -p [외부port]:[컨테이너 내부port] --name [컨�
 docker run -d --ip [ip] -p [외부port]:[컨테이너 내부port] --name [컨테이너 이름] [image id]
 docker logs -f [컨테이너 이름]
 
+docker inspect -f "{{ .NetworkSettings.IPAddress }}" eureka-server
+
 # 컨테이너 중지
 docker container stop [컨테이너 이름]
 

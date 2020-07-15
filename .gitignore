@@ -33,3 +33,6 @@ out/
 
 ### VS Code debug classpath ###
 bin/
+
+### docker import jar ###
+docker/*.jar
